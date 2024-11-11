@@ -1,15 +1,11 @@
 package com.sample.exefitness.ui.theme
 
-import androidx.lifecycle.ViewModel
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
+data class UseSet(
+    var firstName: String = "John",
+    var lastName: String = "Doe",
+    var age: String = "25",
+    var gender: String = "Male",
+    var birthdate: String = "1998-01-01",
+    var userType: String = "User"
+)
 
-class UseSet : ViewModel() {
-    var firstName by mutableStateOf("")
-    var lastName by mutableStateOf("")
-    var age by mutableStateOf("")
-    var birthdate by mutableStateOf("")
-    var gender by mutableStateOf("Male")
-    var userType by mutableStateOf("User") // This can be set to "Admin" or "User"
-}
